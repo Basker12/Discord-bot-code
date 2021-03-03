@@ -1,0 +1,73 @@
+import discord
+from discord.ext import commands
+import asyncio
+import random
+
+client = commands.Bot(command_prefix = '!')
+
+@client.event
+async def on_ready():
+    await client.change_presence(activity=discord.Game(name="your mum"))
+
+    print("Weenur pod is ready!")
+
+@client.command(pass_context=True)
+async def coins(ctx):
+    coins = 5
+    await ctx.send(f"Your number of coins is: {coins}")
+
+@client.command(pass_context=True)
+async def members(ctx):
+    member_count = 0
+    for member in ctx.guild.members:
+        member_count += 1
+    await ctx.send(ctx.guild.member_count)
+
+@client.command(aliases = ['user', 'info'])
+@commands.has_permissions(kick_members=True)
+async def whodis(ctx, member : discord.Member):
+    embed = discord.Embed(title = member.name, color = discord.Colour.red())
+    embed.add_field(name = "ID", value = member.id, inline = True)
+    await ctx.send(embed=embed)
+
+@client.command(aliases = ['helpme'])
+async def holp(ctx):
+    embed = discord.Embed(
+        title = 'Weenur pod helpline!',
+        colour = discord.Colour.from_rgb(255,255,0)
+    )
+
+    embed.set_thumbnail(url = 'https://cdn.discordapp.com/attachments/814574712126308396/816626948545314866/feck_off.png')
+
+    embed.add_field(name = '!members', value = 'Lets you see the amount of memebers in the server.', inline = False)
+    embed.add_field(name = '!coins', value = ' Shows your balance of coins.', inline = False)
+    embed.add_field(name = '!music_help', value = """Lets you play a song from YouTube, write !music_help for all the 
+        music commands.""", inline = False)
+    
+    await ctx.send(embed=embed)
+
+@client.command(aliases = ['music_help'])
+async def music(ctx):
+    embed = discord.Embed(
+        title = 'This is the music helpline!',
+        colour = discord.Colour.from_rgb(255,255,0)
+
+    )
+
+    embed.set_thumbnail(url = 'https://cdn.discordapp.com/attachments/814574712126308396/816640533064712192/wpcmimg.png')
+
+    embed.add_field(name = '!join <voice channel name>', value = 'This makes the bot join the specific VC.', inline = False)
+    embed.add_field(name = '!yt <URL>', value = 'Lets you play a song from YouTube.', inline = False)
+    embed.add_field(name = '!play', value = 'Lets you play a song from your local filesystem.', inline = False)
+    embed.add_field(name = '!stop', value = 'Stops the current song from being played and disconnects the bot.', inline = False)
+
+    await ctx.send(embed=embed)
+
+@client.command(aliases = ['join'])
+async def join_vc(ctx):
+    channel = ctx.message.author.voice.voice_channel
+    await channel.connect()
+
+#ctx.author.name, ctx.guild.name, ctx.guild.name
+
+client.run('Bot token here') # NEVER get rid of this line of code
