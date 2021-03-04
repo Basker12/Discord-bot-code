@@ -13,16 +13,20 @@ The bot will have new features added to it, i'll get rid of the coins feature.
 The coins feature was just for me too expermient with what i can do with the 
 code. 
 
-Here are things that i will add to the bot and approximately when thye will be 
+Here are things that i will add to the bot and approximately when thet will be 
 added. A added feature which will on the bot will be marked here with a **.
 
 The bot too be able to join, leave and play music in a vc (voice channel)
+^This will take around 2-3 days from now.
 
 Remove the coin feature and replace it with another game, e.g. 8 ball or
 something along those lines.
+^This will take around 1-2 days from now.
 
 Maybe embed all of the bots messages but this is a tedious process so i might 
 skip on it but it does make the bots code look a lot cleaner.
+^There isn't really a time for this because of me not being bothered to go 
+throught the boring process of embeding the messages.
 
 You can use the bots code to your liking but the Weenur Pod name is my use,
 if someone wishes to use my bots name (Weenur Pod) they must message me on 
