@@ -4,10 +4,12 @@ import asyncio
 import random
 
 client = commands.Bot(command_prefix = '!')
+#^ The command prefix can be changed to your liking, it
+doesn't have to be a !.
 
 @client.event
 async def on_ready():
-    await client.change_presence(activity=discord.Game(name="your mum"))
+    await client.change_presence(activity=discord.Game(name="#Whatever you like"))
 
     print("Weenur pod is ready!")
 
