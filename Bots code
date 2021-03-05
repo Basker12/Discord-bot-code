@@ -1,4 +1,3 @@
-```py
 import discord
 from discord.ext import commands
 import asyncio
@@ -105,4 +104,4 @@ async def join_vc(ctx):
 
 #ctx.author.name, ctx.guild.name, ctx.guild.name
 
-client.run('Bot token here') # NEVER get rid of this line of code```
+client.run('Bot token here') # NEVER get rid of this line of code
