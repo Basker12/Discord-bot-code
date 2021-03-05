@@ -13,28 +13,14 @@ Python (The bot can be written in other languages for example Java)
 then you wont be having any problems. The API is 'ok' to read it
 can be pretty challenging at times, but if you're ever stuck i 
 highly recommend watching a video about it or just use StackOverflow.
-
-The bot will have new features added to it, i'll get rid of the coins feature.
-The coins feature was just for me too expermient with what i can do with the 
-code. 
-
-Here are things that i will add to the bot and approximately when thet will be 
-added. A added feature which will on the bot will be marked here with a **.
-
-The bot too be able to join, leave and play music in a vc (voice channel)
-^This will take around 2-3 days from now.
-
-Remove the coin feature and replace it with another game, e.g. 8 ball or
-something along those lines.
-^This will take around 1-2 days from now. ** < Completed
-
-Add a gaming quiz. < This one is for fun.
-
-Maybe embed all of the bots messages but this is a tedious process so i might 
-skip on it but it does make the bots code look a lot cleaner.
-^There isn't really a time for this because of me not being bothered to go 
-throught the boring process of embeding the messages.
-
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| New feature | Description | Completed Y/N |
+| --- | --- | --- |
+| 8ball | This feature will allow you too write !8ball <question> for the bot too output there words of wisdom to your question | Y |
+| Gaming Quiz | This feature is just for fun, there will be a set of gaming related questions that you can answer | N |
+| Improve the 'coin' feature | I added the coin feature when i started to code the bot and didn't really do anything else with it, but i want to add a shop where you can buy items with. | N |
+| Embed all messages | This isn't really a feature but it does make the bots outputs of messages look a lot cleaner, unfortunately embeding these messages isn't hard or challenging its just very tedious to do. Thats why this is my least of my priorty to complete. | N | 
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 You can use the bots code to your liking but the Weenur Pod name is my use,
 if someone wishes to use my bots name (Weenur Pod) they must message me on 
 Discord.
