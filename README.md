@@ -1,5 +1,6 @@
 ![image](https://user-images.githubusercontent.com/71788109/110173551-ac3c6c80-7df6-11eb-8e36-75ff32325c0f.png)
 
+Welcome to the Discord bot guide!
 
 My first discord bot appropriately named Weenur pod, is a simple
 bot that does simple things like show messages, show a persons ID
@@ -40,4 +41,4 @@ Discord.
 
 My discord is: Basker#8607
 
-Thank you for reading, Basker12.
+--Basker12
