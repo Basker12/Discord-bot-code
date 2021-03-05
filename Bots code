@@ -6,6 +6,7 @@ import random
 client = commands.Bot(command_prefix = '!')
 #^ The command prefix can be changed to your liking, it
 doesn't have to be a !.
+client.remove_command('help')
 
 @client.event
 async def on_ready():
