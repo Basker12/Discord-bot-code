@@ -21,7 +21,7 @@ The bot too be able to join, leave and play music in a vc (voice channel)
 
 Remove the coin feature and replace it with another game, e.g. 8 ball or
 something along those lines.
-^This will take around 1-2 days from now.
+^This will take around 1-2 days from now. ** < Completed
 
 Maybe embed all of the bots messages but this is a tedious process so i might 
 skip on it but it does make the bots code look a lot cleaner.
