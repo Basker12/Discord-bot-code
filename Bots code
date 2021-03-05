@@ -45,6 +45,8 @@ async def holp(ctx):
     embed.add_field(name = '!coins', value = ' Shows your balance of coins.', inline = False)
     embed.add_field(name = '!music_help', value = """Lets you play a song from YouTube, write !music_help for all the 
         music commands.""", inline = False)
+    embed.add_field(name = '!8ball', value= """Lets you play a game with an 8ball. Write !8ball <your question> and he shall give you
+        the words of wisdom""", inline = False)
     
     await ctx.send(embed=embed)
 
@@ -62,6 +64,35 @@ async def music(ctx):
     embed.add_field(name = '!yt <URL>', value = 'Lets you play a song from YouTube.', inline = False)
     embed.add_field(name = '!play', value = 'Lets you play a song from your local filesystem.', inline = False)
     embed.add_field(name = '!stop', value = 'Stops the current song from being played and disconnects the bot.', inline = False)
+
+    await ctx.send(embed=embed)
+    
+@client.command(aliases = ['8ball', 'skeleseer'])
+async def ball_8(ctx, *, question):
+    embed = discord.Embed(
+        colour = discord.Colour.from_rgb(255,255,0)
+    )
+    ball_8_words = ['As i see it, yes',
+            'Ask again later',
+            'Better not tell you now',
+            'Cannot predict now',
+            'Dont count on it',
+            'It is certain',
+            'It is decidedly so',
+            'Most likely',
+            'My sources say no',
+            'Outlook not so good',
+            'Reply hazy, try again',
+            'Signs point to yes',
+            'Very doubtful',
+            'Without a doubt',
+            'Yes',
+            'No',
+            'Yes - definitely',
+            'You may rely on it']
+    
+    embed.set_author(name = '8 Ball', icon_url = 'https://cdn.discordapp.com/attachments/814574712126308396/817150768179183636/epic_8_ball_v4.png')
+    embed.add_field(name = f'Your question is: {question}', value = f'The answer is: {random.choice(ball_8_words)}', inline = False)
 
     await ctx.send(embed=embed)
 
