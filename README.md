@@ -15,13 +15,13 @@ can be pretty challenging at times, but if you're ever stuck i
 highly recommend watching a video about it or just use StackOverflow.
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-| New feature | Description | Completed Y/N |
-| --- | --- | --- |
-| 8ball | This feature will allow you too write !8ball <question> for the bot too output there words of wisdom to your question. | Y |
-| Gaming Quiz | This feature is just for fun, there will be a set of gaming related questions that you can answer. | N |
-| Improve the 'coin' feature | I added the coin feature when i started to code the bot and didn't really do anything else with it, but i want to add a shop where you can buy items with. | N |
-| Embed all messages | This isn't really a feature but it does make the bots outputs of messages look a lot cleaner, unfortunately embeding these messages isn't hard or challenging its just very tedious to do. Thats why this is my least of my priorty to complete. | N | 
-| Music | The music feature will let you play a song from YouTube by making the bot join the VC and playing the song and leave the VC when requested by the user. | N |
+| New feature | Description | Completed Y/N | Date when featured was added |
+| --- | --- | --- | --- |
+| 8ball | This feature will allow you too write !8ball <question> for the bot too output there words of wisdom to your question. | Y | 04/03/2021 |
+| Gaming Quiz | This feature is just for fun, there will be a set of gaming related questions that you can answer. | N | N/A |
+| Improve the 'coin' feature | I added the coin feature when i started to code the bot and didn't really do anything else with it, but i want to add a shop where you can buy items with. | N | N/A |
+| Embed all messages | This isn't really a feature but it does make the bots outputs of messages look a lot cleaner, unfortunately embeding these messages isn't hard or challenging its just very tedious to do. Thats why this is my least of my priorty to complete. | N | N/A | 
+| Music | The music feature will let you play a song from YouTube by making the bot join the VC and playing the song and leave the VC when requested by the user. | N | N/A |
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
   
 You can use the bots code to your liking but the Weenur Pod name is my use,
