@@ -48,6 +48,8 @@ async def holp(ctx):
         music commands.""", inline = False)
     embed.add_field(name = '!8ball', value= """Lets you play a game with an 8ball. Write !8ball <your question> and he shall give you
         the words of wisdom""", inline = False)
+    embed.add_field(name = '!gaming_quiz', value = """Lets you play a gaming quiz. To answer the question you must write
+        !answer_ <quiz number> and then your answer, this also will be a number from 1-5. Theres five questions in the quiz.""", inline = False)
     
     await ctx.send(embed=embed)
 
@@ -97,10 +99,34 @@ async def ball_8(ctx, *, question):
 
     await ctx.send(embed=embed)
 
-@client.command(aliases = ['join'])
-async def join_vc(ctx):
-    channel = ctx.message.author.voice.voice_channel
-    await channel.connect()
+@client.command(pass_context = True)
+async def gaming_quiz(ctx):
+    embed = discord.Embed(
+        title = 'Question 1',
+        colour = discord.Colour.from_rgb(255,255,0)
+    )
+
+    embed.set_thumbnail(url = 'https://cdn.discordapp.com/attachments/814574712126308396/818166200068210708/220px-TLOU_P2_Box_Art_2.png')
+    embed.add_field(name = 'Who made the Last of us part 2?', value = """1: Santa Monica Studios
+    2: CD Project Red
+    3: Naughty Dog
+    4: 343 Studios
+    5: From Software""", inline = False)
+
+    await ctx.send (embed=embed)
+    
+@client.command(pass_context = True)
+async def answer_1(ctx, *, a_1):
+    if a_1 == '1':
+        await ctx.send("Your answer is in-correct 👎")
+    elif a_1 == '2':
+        await ctx.send("Your answer is in-correct 👎")
+    elif a_1 == '3':
+        await ctx.send("Your answer is correct! 👍")
+    elif a_1 == '4':
+        await ctx.send("Your answer is in-correct 👎")
+    elif a_1 == '5':
+        await ctx.send("Your answer is in-correct 👎")
 
 #ctx.author.name, ctx.guild.name, ctx.guild.name
 
