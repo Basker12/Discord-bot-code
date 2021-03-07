@@ -27,10 +27,10 @@ async def members(ctx):
     await ctx.send(ctx.guild.member_count)
 
 @client.command(aliases = ['user', 'info'])
-@commands.has_permissions(kick_members=True)
-async def whodis(ctx, member : discord.Member):
-    embed = discord.Embed(title = member.name, color = discord.Colour.red())
+async def who_dis(ctx, member : discord.Member):
+    embed = discord.Embed(title = member.name, color = discord.Colour.from_rgb(255,255,0))
     embed.add_field(name = "ID", value = member.id, inline = True)
+    embed.set_thumbnail(url = member.avatar_url)
     await ctx.send(embed=embed)
 
 @client.command(aliases = ['helpme'])
@@ -42,16 +42,13 @@ async def holp(ctx):
 
     embed.set_thumbnail(url = 'https://cdn.discordapp.com/attachments/814574712126308396/816626948545314866/feck_off.png')
 
-    embed.add_field(name = '!members', value = 'Lets you see the amount of memebers in the server.', inline = False)
+    embed.add_field(name = '!members', value = 'Lets you see the amount of members in the server.', inline = False)
     embed.add_field(name = '!coins', value = ' Shows your balance of coins.', inline = False)
     embed.add_field(name = '!music_help', value = """Lets you play a song from YouTube, write !music_help for all the 
         music commands.""", inline = False)
-    embed.add_field(name = '!8ball', value= """Lets you play a game with an 8ball. Write !8ball <your question> and he shall give you
-        the words of wisdom""", inline = False)
-    embed.add_field(name = '!gaming_quiz', value = """Lets you play a gaming quiz. To answer the question you must write
-        !answer_ <quiz number> and then your answer, this also will be a number from 1-5. Theres five questions in the quiz.""", inline = False)
-    
-    await ctx.send(embed=embed)
+    embed.add_field(name = '!8ball', value= """Lets you play a game with an 8ball. Write !8ball <your question> and he shall give you the words of wisdom""", inline = False)
+    embed.add_field(name = '!gaming_quiz', value = """Lets you play a gaming quiz. To answer the question you must write !answer_ <quiz number> and then your answer, this also will be a number from 1-5. Theres five questions in the quiz.""", inline = False)
+    embed.add_field(name = '!info', value = """Lets you see the selected discord user's id, there name and there pfp. Write !info @ <user> to see there info.""", inline = False)
 
 @client.command(aliases = ['music_help'])
 async def music(ctx):
