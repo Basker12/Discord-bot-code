@@ -28,8 +28,8 @@ You can use the bots code to your liking but the Weenur Pod name is my use,
 if someone wishes to use my bots name (Weenur Pod) they must message me on 
 Discord.
 
-I have completed everything i wanted to do with this bot.
-I wont be doing any more updates to it anymore.
+I have completed everything i wanted to do with this bot,
+i wont be doing anymore updates to the discord bot.
 
 My discord is: Basker#8607
 
