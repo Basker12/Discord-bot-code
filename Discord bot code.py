@@ -11,7 +11,7 @@ players = {}
 
 @client.event
 async def on_ready():
-    await client.change_presence(activity=discord.Game(name="your mum - !help"))
+    await client.change_presence(activity=discord.Game(name="#Whaterver you want it to be"))
 
     print("Weenur pod is ready!")
 
