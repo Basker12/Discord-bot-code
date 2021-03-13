@@ -28,35 +28,35 @@ async def shop(ctx):
     )
     embed.set_thumbnail(url = 'https://cdn.discordapp.com/attachments/814574712126308396/818609933876199446/shop.png')
 
-    embed.add_field(name = 'Brazzers mag', value = 'Coins: 499', inline = True)
-    embed.add_field(name = 'Toilet', value = 'FREE', inline = True)
-    embed.add_field(name = 'John Cenas chair', value = 'Coins: 100', inline = True)
-    embed.add_field(name = 'Allahs mercy', value = 'You dont buy forgivness, forgivness buys you', inline = True)
-    embed.add_field(name = 'Theo cosplaying as a hentai character', value = 'Coins: 1', inline = True)
-    embed.add_field(name = 'Free RAM', value = 'Coins: 25', inline = True)
+    embed.add_field(name = '#Whaterver you want it to be', value = 'Coins: 499', inline = True)
+    embed.add_field(name = '#Whaterver you want it to be', value = 'FREE', inline = True)
+    embed.add_field(name = '#Whaterver you want it to be', value = 'Coins: 100', inline = True)
+    embed.add_field(name = '#Whaterver you want it to be', value = '', inline = True)
+    embed.add_field(name = '#Whaterver you want it to be', value = 'Coins: 1', inline = True)
+    embed.add_field(name = '#Whaterver you want it to be', value = 'Coins: 25', inline = True)
 
     await ctx.send(embed = embed)
 
 @client.command(pass_context = True)
 async def buy(ctx, *, item):
     coins = 500
-    if item == 'free ram':
+    if item == '#Whaterver you want it to be':
         n_coins = coins - 25
-        await ctx.send(f"You bought free RAM, which wasnt actually free? Your coins balance is now {n_coins}")
-    elif item == 'brazzers mag':
+        await ctx.send("#Whaterver you want it to be")
+    elif item == '#Whaterver you want it to be':
         n_coins = coins - 499
-        await ctx.send(f"You bought the Brazzers mag, if only it was the real one :'( Your coins balance is now {n_coins}")
-    elif item == 'toilet':
-        await ctx.send(f"You bought a toilet? But why? Your coins balance is now {coins}")
-    elif item == 'john cenas chair':
+        await ctx.send("#Whaterver you want it to be")
+    elif item == '#Whaterver you want it to be':
+        await ctx.send("#Whaterver you want it to be")
+    elif item == '#Whaterver you want it to be':
         n_coins = coins - 100
-        await ctx.send("pog")
-    elif item == 'theo cosplaying as a hentai character':
+        await ctx.send("#Whaterver you want it to be")
+    elif item == '#Whaterver you want it to be':
         n_coins = coins - 1
-        await ctx.send("Your gonna have to ask theo this one personally, thanks for the money doe")
-    elif item == 'allahs mercy':
+        await ctx.send("#Whaterver you want it to be")
+    elif item == '#Whaterver you want it to be':
         n_coins = coins - 500
-        await ctx.send(f"You can't buy this, allah will punish you! Your coins balance is now {n_coins}")
+        await ctx.send("#Whaterver you want it to be")
 
 
 @client.command(pass_context=True)
@@ -220,17 +220,6 @@ async def answer(ctx, *, a_1):
     elif a_1 == '15':
         await ctx.send("Your answer is in-correct 👎")
 
-@client.command(pass_context = True)
-async def bimgus_toilet(ctx):
-    hotel_num = random.randint(1, 1500)
-    embed = discord.Embed(
-        title = f'Meet me at toilet number {hotel_num}',
-        colour = discord.Colour.from_rgb(255,255,0)
-    )
-
-    embed.add_field(name = 'Ssstop it step-bro 💦',value = f"{ctx.author.name} stop writing this command its no good! Wanna hookup in the toilets later doe ;)")
-    await ctx.send(embed=embed)
-
 @client.command(pass_context = True, aliases = ['vc'])
 async def join(ctx):
     channel = ctx.message.author.voice.channel
@@ -292,5 +281,5 @@ async def who_made_me(ctx):
     
 #ctx.author.name, ctx.guild.name, ctx.guild.name, user = client.get_member(userid)
 
-client.run('ODE0NTcwOTU3ODI5NzAxNjkz.YDfyUg.mVP0rSp_q6d4c0ybgX3c1JvzCGk') # NEVER get rid of this line of code
+client.run('BOT Token here') # NEVER get rid of this line of code
 
